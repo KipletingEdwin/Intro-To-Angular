@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-roles',
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './roles.component.html',
   styleUrl: './roles.component.css'
 })
@@ -19,5 +20,7 @@ export class RolesComponent {
   currentDate : Date = new Date();
 
   inputType: string = "checkbox";
+
+  selectedState: string = '';
 
 }
